@@ -36,7 +36,7 @@ test:
     - prolif
   commands:
     - pip check
-    - pytest
+    - PYTHONPATH=$PYTHONPATH:$SRC_DIR/tests/ pytest
   requires:
     - pip
     - pytest>=6.1.2
