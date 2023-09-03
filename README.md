@@ -1,11 +1,11 @@
-About prolif
-============
+About prolif-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/prolif-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/chemosim-lab/ProLIF
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/prolif-feedstock/blob/main/LICENSE.txt)
 
 Summary: Protein-Ligand Interaction Fingerprints
 
