@@ -7,8 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/prolif-{{ version }}.tar.gz
-  sha256: 8f63ebd64aabe4d0afdc3bb63490ca11e5742024d0d1a9a70eee8d7783603393
+  # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/prolif-{{ version }}.tar.gz
+  # sha256: 8f63ebd64aabe4d0afdc3bb63490ca11e5742024d0d1a9a70eee8d7783603393
+  git_url: https://github.com/chemosim-lab/ProLIF.git
+  git_rev: master
+  git_depth: 1
 
 build:
   number: 0
@@ -36,7 +39,7 @@ test:
     - prolif
   commands:
     - pip check
-    - PYTHONPATH=$PYTHONPATH:$SRC_DIR/tests/ pytest
+    - pytest
   requires:
     - pip
     - pytest>=6.1.2
