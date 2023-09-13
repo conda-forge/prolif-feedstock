@@ -1,5 +1,5 @@
 {% set name = "prolif" %}
-{% set version = "1.1.0" %}
+{% set version = "2.0.0.post1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/prolif-{{ version }}.tar.gz
-  sha256: 6879c1fe3e6d61f6c050d0bb7d050dadc37c99c512219875ed3bda800fa0e351
+  sha256: 274dc342c57add87d2ca7dd89da9dd024646bcd0a6da9c4b86934221f81d19b9
 
 build:
   number: 0
@@ -28,6 +28,8 @@ requirements:
     - mdanalysis >=2.2.0
     - tqdm
     - rdkit >=2021.03.1
+    - multiprocess
+    - dill
 
 test:
   imports:
@@ -38,6 +40,9 @@ test:
   requires:
     - pip
     - pytest>=6.1.2
+    - ipython
+    - py3Dmol
+    - matplotlib>=3.5
   source_files:
     - tests/
 
