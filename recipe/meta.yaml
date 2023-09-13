@@ -1,5 +1,5 @@
 {% set name = "prolif" %}
-{% set version = "2.0.0.post0" %}
+{% set version = "2.0.0.post1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/prolif-{{ version }}.tar.gz
-  sha256: d57a354e0481b6b6842325943d0ed81f3da50f9c429ec2ed139568bb09c116b1
+  sha256: 274dc342c57add87d2ca7dd89da9dd024646bcd0a6da9c4b86934221f81d19b9
 
 build:
   number: 0
