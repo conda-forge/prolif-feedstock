@@ -39,7 +39,7 @@ test:
     - pytest
   requires:
     - pip
-    - pytest>=6.1.2
+    - pytest>=6.1.2,<8
     - ipython
     - py3Dmol
     - matplotlib>=3.5
