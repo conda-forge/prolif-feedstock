@@ -7,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/prolif-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/prolif-{{ version }}.tar.gz
   sha256: e0951b23e2144328917496efd65c4d8f7c821045a8beaf5fe86f3706c648acd0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - rdkit
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pandas >=1.0.0
     - numpy >=1.13.3
     - scipy >=1.3.0
@@ -43,6 +43,7 @@ test:
     - ipython
     - py3Dmol
     - matplotlib>=3.5
+    - python {{ python_min }}
   source_files:
     - tests/
 
