@@ -33,6 +33,7 @@ requirements:
     - dill
     - networkx >=2.5.0
     - psutil
+    - gemmi >=0.7.5
 
 test:
   imports:
@@ -52,7 +53,7 @@ test:
 
 about:
   home: https://github.com/chemosim-lab/ProLIF
-  summary: Protein-Ligand Interaction Fingerprints
+  summary: Interaction Fingerprints for protein-ligand complexes and more
   dev_url: https://github.com/chemosim-lab/ProLIF/
   license: Apache-2.0
   license_file: LICENSE
