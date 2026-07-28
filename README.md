@@ -7,7 +7,7 @@ Home: https://github.com/chemosim-lab/ProLIF
 
 Package license: Apache-2.0
 
-Summary: Protein-Ligand Interaction Fingerprints
+Summary: Interaction Fingerprints for protein-ligand complexes and more
 
 Development: https://github.com/chemosim-lab/ProLIF/
 
