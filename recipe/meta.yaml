@@ -1,5 +1,5 @@
 {% set name = "prolif" %}
-{% set version = "2.2.2" %}
+{% set version = "2.2.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/prolif-{{ version }}.tar.gz
-  sha256: 34b4fd377606e5e7a5cc4b953d1497a388a36076a3214ab309b5863ee7423859
+  sha256: dafc2d9bd5dd9dd9ace79badf48357c6296e2e4653aad38dac1d15d4bef61f92
 
 build:
   number: 0
